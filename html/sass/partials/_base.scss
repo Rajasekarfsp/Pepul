@@ -1,0 +1,265 @@
+@import 'variables';
+
+html, body {
+    height: 100%;
+    scrollbar-color: #FE4B01 #e0e0e0;
+    scrollbar-width: thin;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+*:hover{
+    -webkit-transition: 0.3s all ease 0s;
+    -moz-transition: 0.3s all ease 0s;
+    -o-transition: 0.3s all ease 0s;
+    transition: 0.3s all ease 0s;
+}
+body {
+    background-color: $body-bg-color;
+    font-family: $lato-regular;
+    font-size: 1em;
+    margin:0;
+    height:100%;
+    padding: 0;
+    overflow-x: hidden;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    scrollbar-color: #FE4B01 #e0e0e0;
+    scrollbar-width: thin;
+    scrollbar-gutter: stable;
+    &::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+    &::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+    background-color: #FE4B01;
+    }
+      
+}
+.clsbrown-bg{
+    background-color: #A99890;
+    scrollbar-color: #543D32 #e0e0e0 !important;
+    scrollbar-width: thin;
+    scrollbar-gutter: stable;
+    &::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+    &::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+    background-color: #543D32 !important;
+    }
+}
+@font-face {
+    font-family: 'latoblack';
+    src: url('../fonts/lato-black-webfont.woff2') format('woff2'),
+         url('../fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoitalic';
+    src: url('../fonts/lato-italic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/lato-thin-webfont.woff2') format('woff2'),
+         url('../fonts/lato-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('../fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+button{
+    -webkit-transition: 0.3s all ease 0s;
+    -moz-transition: 0.3s all ease 0s;
+    -o-transition: 0.3s all ease 0s;
+    transition: 0.3s all ease 0s;
+}
+html {
+    -ms-overflow-style: scrollbar;
+}
+form, table, h1, h2, h3, h4, h5, h6, ul, li, div, dl, p {
+    margin:0;
+    padding:0;
+}
+li {
+     list-style:none; 
+}
+a {
+    text-decoration:none;
+    outline:none;
+    // color: $light-green;
+    -webkit-transition: 0.3s all ease 0s;
+    -moz-transition: 0.3s all ease 0s;
+    -o-transition: 0.3s all ease 0s;
+    transition: 0.3s all ease 0s;
+    &:hover, &:focus{
+        text-decoration:none;
+        color: #53673F;
+    }
+}
+img {
+    border:0;
+    vertical-align:middle;
+}
+/* CSS Clearfix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-table;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+#wrapper{
+    flex: 1 0 auto;
+    max-width: 1000px;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+    @media (max-width: 1199.98px) {
+        width: 90%;
+        max-width: inherit;
+        @media (max-width: 767.98px) {
+            margin-top: 1.5em !important;
+        }
+    }
+    
+}
+#wrapper.clsfull-width-wrapper{
+    @media (max-width: 767.98px) {
+        margin-top: 0 !important;
+    }
+}
+.clsoswald-font{
+    font-family: $oswald;
+}
+/*--------------PRELOADING------------ */
+#overlayer {
+    width:100%;
+    height:100%;  
+    position:absolute;
+    z-index:9999;
+    background: rgba(0, 0, 0, 0.5);
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index:9999;
+    border: 4px solid #Fff;
+    top: 50%;
+    left: 50%;
+    animation: loader 2s infinite ease;
+    transform: translate(-50%, -50%);
+
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+    transform: rotate(0deg);
+    }
+    
+    25% {
+    transform: rotate(180deg);
+    }
+    
+    50% {
+    transform: rotate(180deg);
+    }
+    
+    75% {
+    transform: rotate(360deg);
+    }
+    
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+    height: 0%;
+    }
+    
+    25% {
+    height: 0%;
+    }
+    
+    50% {
+    height: 100%;
+    }
+    
+    75% {
+    height: 100%;
+    }
+    
+    100% {
+    height: 0%;
+    }
+}

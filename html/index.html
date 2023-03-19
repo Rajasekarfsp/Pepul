@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Style sheets -->
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <!-- Page preloader -->
+    <div id="overlayer"></div>
+    <span class="loader">
+      <span class="loader-inner"></span>
+    </span>
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="shadow-sm bg-body mt-5">
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-md border-bottom ps-5 pe-5">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.png" class="img-fluid" alt="Pepul" width="50"
+        /></a>
+
+        <button
+          class="navbar-toggler uarr"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Hero section -->
+      <section class="clsherosection d-flex flex-column pt-5 ps-5 pe-5">
+        <h2 class="col-lg-8 mb-4 clsoswald-font">
+          We have put together a special combination of strategy, marketing,
+          design, and expertise.
+        </h2>
+        <figure class="mb-0">
+          <div class="clshero-image">
+            <img src="images/hero-img.jpg" alt="Team" class="img-fluid" />
+            <span
+              ><img
+                src="images/logo-round.png"
+                alt="Round-logo"
+                class="img-fluid"
+                width="100"
+            /></span>
+          </div>
+        </figure>
+      </section>
+      <!-- Our story -->
+      <section class="clsourstory-section pt-5 ps-5 pe-5 pb-4">
+        <h3 class="border border-1 rounded-pill main-title mb-4">Our Story</h3>
+        <div class="col-md-9">
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum.
+          </p>
+        </div>
+      </section>
+      <!-- Attached image -->
+      <figure class="clsstory-below-img mt-5"></figure>
+      <!-- Our values -->
+      <section class="clsour-values-section pt-5 ps-5 pe-5 pb-5">
+        <div class="clsguideline-title col-md-6 pb-5 mb-4 pt-3">
+          <h3 class="border border-1 rounded-pill main-title mb-4">
+            Our Values
+          </h3>
+          <h5>
+            Here are the four guidelines we stick to protect you in these
+            shifting environments.
+          </h5>
+        </div>
+        <div class="clsguidelines-block pb-4">
+          <div class="row gx-5">
+            <div class="col-md-6 pb-5 mb-5">
+              <div class="clsguideline-box">
+                <h2 class="pb-3">We have a strong passion.</h2>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="clsguideline-box float-end">
+                <h2 class="pb-3">We enjoy learning.</h2>
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="clsguideline-box">
+                <h2 class="pb-3">We leave egos at the door.</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="clsguideline-box float-end">
+                <h2 class="pb-3">We support one another.</h2>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Meet the team -->
+      <section class="clsmeet-the-team-section pt-5 ps-5 pe-5 pb-5">
+        <div class="col-md-9 pb-5 mb-4 pt-4">
+          <h3 class="border border-1 rounded-pill main-title mb-4">
+            Meet the team
+          </h3>
+          <h2>
+            Meet multi-talented people who are passinate about their craft.
+          </h2>
+        </div>
+        <div
+          class="clsmeet-the-team-whole-col row row-cols-lg-3 row-cols-md-2 gx-5"
+        >
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <figure>
+                <img
+                  src="images/team-img.jpg"
+                  class="img-fluid clsmember-img"
+                  alt="Team"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="clsmember-info-block">
+                  <div class="clsmember-info">
+                    <h5 class="card-title">Jensen Mustafa</h5>
+                    <p class="card-text">Ceo and founder</p>
+                  </div>
+
+                  <div class="clssocial-media">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partners -->
+      <section class="clspartners-section pt-5 pb-5 ps-5 pe-5">
+        <div class="col-md-7 mb-4 pt-4">
+          <h2>Trusted with more than 150 companies since 2012</h2>
+        </div>
+        <div class="regular slider pt-4">
+          <div>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/04.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/05.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/06.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/04.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/05.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/06.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/04.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/05.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/06.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/04.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/05.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/06.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/04.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/05.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/06.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/04.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/05.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/06.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/04.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/05.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/06.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/04.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/05.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/06.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/01.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/02.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/03.png" alt="Slider-img1" class="img-fluid"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Environment  -->
+      <section class="clsenvironment-section pt-5 pb-5 ps-5 pe-5">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="clsimg-1 pe-5">
+              <img src="images/img2.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="clsimg-2">
+              <img src="images/img1.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-end">
+          <div class="col-md-7">
+            <div class="clsimg-3 ps-5 pe-5">
+              <img src="images/img3.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="clsquote pb-3">
+              <blockquote>
+                <i class="bi bi-quote"></i> Contrary to popular belief, Lorem
+                Ipsum is not simply random text. It has roots in a piece of
+                classical Latin literature from 45 BC.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Together -->
+      <section class="clstogether-section pt-5 pb-5 ps-5 pe-5">
+        <div class="col-md-8 col-sm-8 pt-4 pb-4">
+          <h1>Let's start something new together</h1>
+        </div>
+        <figure class="pt-5">
+          <img
+            src="images/logo-round.png"
+            alt="Round-logo"
+            class="img-fluid"
+            width="150"
+          />
+        </figure>
+      </section>
+      <!-- Footer -->
+      <footer class="pb-4 ps-5 pe-5">
+        <div class="clsfooter-inner pt-4">
+          <div class="clsfooter-top">
+            <div class="clsfooter-menus">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="clsfooter-social-media">
+              <ul>
+                <li>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clsfooter-bottom pt-5 pb-3">
+            <div class="clscopy-right">
+              <p>
+                © 2022 Keeper. All rights reserved.
+                <span class="ps-5"><a href="#">Privacy Policy</a></span>
+              </p>
+            </div>
+            <p class="clsdesign-made">Made by Stab Design Studio</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Js files -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // Partners slider
+        $(".regular").slick({
+          dots: false,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+
+        // Add class
+        var navbar = $(".navbar");
+        var sticky = navbar.offset().top;
+
+        $(window).scroll(function () {
+          if ($(window).scrollTop() >= sticky) {
+            navbar.addClass("sticky");
+          } else {
+            navbar.removeClass("sticky");
+          }
+        });
+      });
+
+      // Preloading
+      $(window).on("load", function () {
+        $("body").css("overflow", "hidden");
+        $(".loader")
+          .delay(1500)
+          .fadeOut("slow", function () {
+            $("body").css("overflow", "auto");
+          });
+        $("#overlayer").delay(1500).fadeOut("slow");
+      });
+    </script>
+  </body>
+</html>

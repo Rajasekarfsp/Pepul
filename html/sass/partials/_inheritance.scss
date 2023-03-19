@@ -1,0 +1,20 @@
+%gradient{
+    background: rgb(254,75,1);
+    background: linear-gradient(135deg, rgba(254,75,1,1) 30%, rgba(252,3,87,1) 100%); 
+}
+%brown-theme{
+    background: $brown;
+}
+%h3-rounded {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    color: $light-grey;
+}
+%transition{
+    -webkit-transition: 0.3s all ease 0s;
+    -moz-transition: 0.3s all ease 0s;
+    -o-transition: 0.3s all ease 0s;
+    transition: 0.3s all ease 0s;
+}
